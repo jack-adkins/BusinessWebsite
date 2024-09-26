@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="bweb.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <style type="text/css">
+            h2 {font-family: 'Pacifico', cursive; font-size: 60px; text-align: center; font-weight: 15;}
+            h3 {font-family: 'Pacifico', cursive; font-size: 50px; text-align: center; font-weight: 15;}
+            .form-element {margin-bottom: 8px; font-size: 22px; align-items: center; text-align: center;}
+            label {width: auto; font-weight: 600; display:inline-block; text-align:center; font-family: 'Times New Roman', serif;}
+            .submit-button {background-color: #edb996; color: #000000;}
+            .submit-button:hover {background-color: #878381;}
+        </style>
+    </head>
+    <body>
+        <h1>Services</h1>
+        <ul id="nav">
+            <li><a href='BusinessWebsite.html'>Home</a></li>
+            <li><a href='BWeb_services.html'>Services</a></li>
+            <li><a href='BWeb_contact.html'>Contact</a></li>
+        </ul>
+        <div style="height: 180px"></div>
+        <h2>Offered Services</h2>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+                <th>Pricing</th>
+            </tr>
+            <tr>
+                <td>Custom Glassware Creations</td>
+                <td>Create custom glassware like vases, bowls, or glasses based on client specifications.</td>
+                <td>Glassware starting at $150 per piece</td>
+            </tr>
+            <tr>
+                <td>Glassblowing Classes</td>
+                <td>Hands-on glassblowing workshops for beginners and enthusiasts, teaching the basics of shaping molten glass.</td>
+                <td>$75 per person for a 2-hour session.</td>
+            </tr>
+            <tr>
+                <td>Art Glass Sculptures</td>
+                <td>Commission unique glass sculptures tailored to the client's desired design, color, and size.</td>
+                <td>Starting at $300 per sculpture.</td>
+            </tr>
+            <tr>
+                <td>Glass Repair and Restoration</td>
+                <td>Repair or restore damaged glass items, such as antique glassware or heirloom pieces.</td>
+                <td>$100 per hour.</td>
+            </tr>
+            <tr>
+                <td>Wedding & Event Glassware</td>
+                <td>Custom-designed glassware sets, including centerpieces, drinkware, or ornaments for weddings and special events.</td>
+                <td>$200 for a set of 10 pieces.</td>
+            </tr>
+            <tr>
+                <td>Glassblowing Demonstrations</td>
+                <td>Live glassblowing demonstrations for events, showcasing the art of crafting glass pieces in real-time.</td>
+                <td>$500 for a 2-hour demonstration.</td>
+            </tr>
+            <tr>
+                <td>Seasonal Ornament Creation</td>
+                <td>Create limited-edition, hand-blown glass ornaments for holidays and special occasions.</td>
+                <td>Price: $30 per ornament</td>
+            </tr>
+        </table>
+        <div style="height: 40px;"></div>
+        <h3>Custom Order Questions?</h3>
+        <p style="font-family: 'Times New Roman', serif; text-align: center; font-size: 24px;">
+            Just fill out this form and we'll get back to you as soon as we can!
+        </p>
+        <form style="margin-top: 50px;" method="get" action="#">
+            <div class="form-element"><label>Name: </label>
+            <input type="text" name="your_name" style="font-family: 'Times New Roman', serif;"/></div>
+
+            <div class="form-element"><label>Email: </label>
+            <input type="text" name="email" style="font-family: 'Times New Roman', serif;"/></div>
+
+            <div class="form-element"><label>Estimated Number of Pieces</label>
+                <input type="radio" name="pieces" value="One">1
+                <input type="radio" name="pieces" value="Small">2-10
+                <input type="radio" name="pieces" value="Medium">10-50
+                <input type="radio" name="pieces" value="Large">50+
+            </div>
+            
+            <div class="form-element"><label>Desired Timeline for Completion(from now)</label>
+                <select size="1" name="pick_timeline">
+                    <option>2-3 Days</option>
+                    <option>1 Week</option>
+                    <option>2-4 Weeks</option>
+                    <option>1 Month+</option>
+                </select>
+            </div>
+
+            <div class="form-element"><label style="vertical-align: top;">Additional Service Description: </label>
+                <textarea name="description" style="width: 500px; height: 200px; vertical-align: top; font-family: 'Times New Roman', serif;"></textarea>
+            </div>
+            <div style="text-align: center;">
+                <input type="submit" value="Submit" class="submit-button">
+            </div>
+        </form>
+        <br>
+    </body>
+</html>
